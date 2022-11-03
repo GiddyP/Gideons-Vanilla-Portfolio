@@ -1,86 +1,531 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--==================== UNICONS ====================-->
-        
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="">
 
-        <title>Responsive Portfolio Website</title>
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>GiddPwild's Portfolio Website</title>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("R5oIKR5iq9NJ5eJet");
+            })();
+        </script>
     </head>
+
     <body>
-        <!--==================== HEADER ====================-->
         <header class="header" id="header">
-            
+            <nav class="nav container">
+
+                <h4 class="nav__logo nav__logo1">P<span class="nav__logo2">_wild</span></h4>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-house-user nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user-exclamation nav__icon"></i> About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="uil uil-suitcase-alt nav__icon"></i> Services
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-image-check nav__icon"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-at nav__icon"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <hr class="hr__line">
+                    <div class="">
+                        <h4 class="nav__logo shift">P<span class="nav__logo2">_wild</span></h4>
+                        <i class="uil uil-times nav__close" id="nav-close"></i>
+                    </div>
+
+                </div>
+                <div class="nav__btns">
+                    <!-- Theme change button  -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
         </header>
 
         <!--==================== MAIN ====================-->
         <main class="main">
             <!--==================== HOME ====================-->
             <section class="home section" id="home">
-                
+                <div class="home__container container grid">
+                    <div class="home__blob">
+                        <div class="img-bg"></div>
+                        <img class="home__blob-img" src="./assets/img/IMG_8627 copy.png" alt="img-picture">
+                    </div>
+                    <div class="home__gradient"></div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I am Gideon</h1>
+                        <!-- animated text -->
+                        <h3 class="home__subtitle">Frontend developer, <br> Forex Algo Expert<span id="career"></span>
+                        </h3>
+                        <p class="home__description">A capable web developer who also has <br class="home__break">
+                            expertise in forex algorithms
+                            and creates <br class="home__break"> EA robots, scripts, and trading indicators.
+                        </p>
+                        <a href="#contact" class="button button--flex" id="contact__button">
+                            Contact Me <i class="uil uil-message button__icon"></i>
+                        </a>
+                        <div class="circle">
+                            <div class="loader">
+                                <div class="loader-item"></div>
+                                <div class="loader-item"></div>
+                                <div class="loader-item"></div>
+                                <div class="loader-item-2 first"></div>
+                                <div class="loader-item-2 second"></div>
+                            </div>
+                        </div>
+                        <div class="home__social">
+                            <a href="https://github.com/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github"></i>
+                            </a>
+                            <a href="https://www.linkedIn.com/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin"></i>
+                            </a>
+
+                            <a href="https://dribble.com/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-globe"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__social2">
+                        <a href="https://github.com/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github"></i>
+                        </a>
+                        <a href="https://www.linkedIn.com/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+
+                        <a href="https://dribble.com/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-globe"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="container2">
+                    <input class="input" type="button" value="Tap me">
+                    <div class="box">
+                        <div class="card" id="front">JavaScript</div>
+                        <div class="card" id="back">CSS</div>
+                        <div class="card" id="left">HTML</div>
+                        <div class="card" id="right">React</div>
+                        <div class="card" id="top">MQL5</div>
+                        <div class="card" id="bottom">GitHub</div>
+                    </div>
+                </div>
             </section>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                
-            </section>
+            <!-- Desktop and Mobile About Section -->
+            <div id="about">
+                <section class="desktop__about container">
+                    <div class="left__about">
+                        <div class="a-card">
+                            <!-- <div class="about__img-bg"></div> -->
+                            <img class="about__blob-img" src="./assets/img/frontendeve.svg" alt="img-picture">
+                        </div>
+                    </div>
+                    <div class="right__about">
+                        <h2 class="section__title about-me__text2">About Me</h2>
+                        <p class="a-sub">A capable web developer who also has expertise in forex algorithms and creates
+                            EA
+                            robots, scripts, and trading indicators.
 
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
+                        </p>
+                        <p class="a-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium incidunt nam quasi
+                            laborum
+                            cupiditate, fuga quod corporis, aliquam harum iusto optio nemo labore dolorum vel natus
+                            ratione
+                            illum doloremque molestias ea ullam odit. Soluta, culpa?
 
-            </section>
+                        </p>
+                        <div class="about__buttons">
+                            <a download="" href="assets/pdf/AdegunleGideonCV202210.pdf" class="button button--flex">
+                                Download CV <i class="uil uil-file-download button__icon"></i>
+                            </a>
+                            <a href="#contact" class="button button--flex">
+                                Contact Me <i class="uil uil-at button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
 
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
+                <!--==================== ABOUT ====================-->
+                <section class="about mobile__about about__section">
+                    <h2 class="section__title about-me__text">About Me</h2>
+                    <div class="about__container container grid">
+                        <img src="assets/img/laptopImage.jpg" alt="about me" class="about__img">
 
-            </section>
+                        <div class="about__data">
+                            <p class="about__description">A capable web developer who also has expertise in forex
+                                algorithms
+                                and creates EA robots, scripts, and trading indicators.</p>
 
+                            <div class="about__buttons">
+                                <a download="" href="assets/pdf/AdegunleGideonCV202210.pdf" class="button button--flex">
+                                    Download CV <i class="uil uil-file-download button__icon"></i>
+                                </a>
+                                <a href="#contact" class="button button--flex">
+                                    Contact Me <i class="uil uil-at button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
             <!--==================== SERVICES ====================-->
             <section class="services section" id="services">
-                
+                <h2 class="section__title">Services</h2>
+                <span class="section__subtitle">What I offer</span>
+                <div class="services__container container grid">
+                    <!--==================== SERVICES 1====================-->
+                    <div class="services__content">
+                        <div class="sevice__details">
+                            <i class="uil uil-java-script services__icon"></i>
+                            <h3 class="service__title">Frontend <br> Developer</h3>
+
+                            <span class="button button--flex button--small button--link services__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </span>
+                        </div>
+                        <hr class="horizontal__services">
+                        <img src="assets/img/Front-end-Development.jpeg" alt="portfolio-img" class="services__img">
+
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Frontend Developer</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I use React to Implement UI designs.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Modern web page development.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I enable UX element interactions.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--==================== SERVICES 2====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-notebooks services__icon"></i>
+                            <h3 class="service__title">Professional <br> Educator</h3>
+                            <span class="button button--flex button--small button--link services__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </span>
+                        </div>
+                        <hr class="horizontal__services">
+                        <img src="assets/img/influence.png" alt="portfolio-img" class="services__img">
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Professional Educator</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I develop the user interface.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>web page development.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I create ux element interactions.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I position your company brand.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== SERVICES 3====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-chart-line services__icon"></i>
+                            <h3 class="service__title">FX Algo <br> Developer</h3>
+                            <span class="button button--flex button--small button--link services__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </span>
+                        </div>
+
+                        <hr class="horizontal__services">
+                        <img src="assets/img/mql5Robot.jpg" alt="portfolio-img" class="services__img">
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">FX Algorithm Developer</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I develop the user interface.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>web page development.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I create ux element interactions.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I position your company brand.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </section>
 
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
-                
-            </section>
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Recent works and Projects</span>
 
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== PORTFOLIO 1====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/screencapture-giddyp-github-io-Landing-page-demo-2022-11-02-04_28_40.png"
+                                alt="portfolio-img" class="portfolio__img">
 
-            </section>
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Modern Website</h3>
+                                <p class="portfolio__description">website adaptable to all devices, with ui components
+                                    and animated interactions.</p>
+                                <div class="portfolio__button-container">
+                                    <a href="#" class="button button--flex button--small portfolio__button">
+                                        View Site <i class="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                                </div>
 
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                
+                            </div>
+                        </div>
+
+                        <!--==================== PORTFOLIO 2====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/screencapture-giddyp-github-io-portfolio-dist-2022-11-02-04_37_51.png"
+                                alt="portfolio-img" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Brand Design</h3>
+                                <p class="portfolio__description">website adaptable to all devices, with ui components
+                                    and animated interactions.</p>
+                                <div class="portfolio__button-container">
+                                    <a href="#" class="button button--flex button--small portfolio__button">
+                                        View Site <i class="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--==================== PORTFOLIO 3====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/iforexDesktopImg.png" alt="portfolio-img" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Online Store</h3>
+                                <p class="portfolio__description">website adaptable to all devices, with ui components
+                                    and animated interactions.</p>
+                                <div class="portfolio__button-container">
+                                    <a href="#" class="button button--flex button--small portfolio__button">
+                                        View Site <i class="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+
+                    <!-- Add pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
             </section>
 
             <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle contact__text">Any of the methods listed here are welcome to be used to
+                    get in touch with me.</span>
 
+                <div class="contact__container container grid">
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="from_name" class="contact__label">Full Name</label>
+                                <input type="text" minlength="4" required id="from_name" class="contact__input">
+                            </div>
+
+                            <div class="contact__content">
+                                <label for="user_email" class="contact__label">Email Address</label>
+                                <input type="email" minlength="8" required id="user_email" class="contact__input">
+                            </div>
+                        </div>
+
+                        <div class="contact__content">
+                            <div class="contact__label-container">
+
+                                <label for="message" class="contact__label">Message</label>
+                                <div class="p-browser">
+                                    <div class="p-circle"></div>
+                                    <div class="p-circle"></div>
+                                    <div class="p-circle"></div>
+                                </div>
+                            </div>
+                            <textarea minlength="15" name="contact__input" required id="message" cols="0" rows="9"
+                                class="contact__input"></textarea>
+                        </div>
+
+                        <div class="form__button">
+                            <a href="#" onclick="sendmail()" class="button button--flex">
+                                Reach out
+                            </a>
+                            <!-- onclick="() -->
+                            <div class="popup" id="popup">
+                                <h2>sent!</h2>
+                                <p>Your message has been successfully sent. Thanks!</p>
+                                <button type="button" onclick="closePopup()" class="button">OK</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div>
+                        <div class="contact__information">
+
+
+                            <i class="uil uil-phone contact__icon"></i>
+                            <span class="contact__subtitle">(+234)7067174101</span>
+
+                        </div>
+
+                        <div class="contact__information">
+
+                            <i class="uil uil-envelope contact__icon"></i>
+                            <a class="contact__subtitle contact__subtitle-2"
+                                href="giddygbenga4@gmail.com">giddygbenga4@gmail.com</a>
+
+                        </div>
+
+                        <div class="contact__information">
+
+                            <i class="uil uil-linkedin-alt contact__icon"></i>
+                            <a class="contact__subtitle contact__subtitle-2"
+                                href="www.linkedin.com/in/gideon-adegunle">www.linkedin.com/in/gideon-adegunle</a>
+
+                        </div>
+
+                        <div class="contact__information">
+
+
+                            <i class="uil uil-map-marker contact__icon"></i>
+                            <span class="contact__subtitle">Lagos, Nigeria.</span>
+
+
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
-
         <!--==================== FOOTER ====================-->
         <footer class="footer">
-         
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Gideon</h1>
+                        <span class="footer__subtitle">Frontend developer</span>
+                    </div>
 
+                    <div class="footer__links">
+
+                        <a href="#contact" class="footer__link">Contact me</a>
+
+                        <div class="footer__socials">
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="uil uil-facebook-f"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="uil uil-instagram"></i>
+                            </a>
+
+                            <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="uil uil-twitter-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__gradient"></div>
+                    <p class="footer__copy">&#169; 2022</p>
+                </div>
+            </div>
+        </footer>
         <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
+
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
-        <script src=""></script>
+        <script src="./assets/js/autotyping.js"></script>
+        <script src="assets/js/main.js"></script>
     </body>
+
 </html>
