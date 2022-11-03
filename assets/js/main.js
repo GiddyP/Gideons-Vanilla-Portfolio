@@ -74,15 +74,21 @@ let popup = document.getElementById("popup");
 
 const sendmail = () => {
 
+    // console.log(e);
+    // e.preventDefault();
+
     let params = {
         from_name: document.getElementById('from_name').value,
         user_email: document.getElementById('user_email').value,
         message: document.getElementById('message').value
     };
-    emailjs.send("service_z2vjxrr", "template_6rnxqya", params).then(function (res) {
-        // alert("success! " + res.status);
-        popup.classList.add("open-popup");
-    });
+
+    if (params.from_name !== "" && params.user_email !== "" && params.message !== "") {
+        emailjs.send("service_z2vjxrr", "template_6rnxqya", params).then(function (res) {
+            // alert("success! " + res.status);
+            popup.classList.add("open-popup");
+        });
+    };
 };
 function closePopup() {
     popup.classList.remove("open-popup");
