@@ -1220,6 +1220,11 @@ filter: blur(1px);
     padding: 0.5rem;
   }
 
+  .services__img{
+    width: 120px;
+    height: 140px;
+  }
+
   .project__img{
     width: 200px;
   }
