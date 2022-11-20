@@ -901,9 +901,6 @@ filter: blur(1px);
 .swiper-pagination-bullet{
   outline: none;
 }
-/*==================== PROJECT IN MIND ====================*/
-
-/*==================== TESTIMONIAL ====================*/
 
 /*==================== CONTACT ME ====================*/
 
@@ -985,6 +982,10 @@ filter: blur(1px);
   justify-content: end;
   margin-right: 5px;
   text-transform: uppercase;
+}
+
+.Reach__button{
+  cursor: pointer;
 }
 
 
@@ -1268,7 +1269,7 @@ filter: blur(1px);
   .desktop__about{
     display: flex;
     align-items: center;
-    padding: 170px 0;
+    padding: 220px 0;
   }
   
 
@@ -1317,9 +1318,11 @@ filter: blur(1px);
   }
 
   .services{
-    padding: 80px auto;
+    padding-top: 120px;
+    padding: 90px auto;
     margin-bottom: 60px;
   }
+
   .services__container{
     flex-direction: row;
     width: 600px;
@@ -1393,7 +1396,12 @@ filter: blur(1px);
   .contact__subtitle{
     margin-top: 5px;
   }
+
+  .portfolio__container{
+    padding: 13px;
+  }
   .portfolio{
+    padding-top: 100px;
     padding: 95px 20px 45px;
     border-radius: .5rem;
   }
@@ -1435,13 +1443,9 @@ filter: blur(1px);
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    /* padding-top: 0;
-    height: 100vh; */
-    /* flex-wrap: wrap; */
-    /* position: relative; */
   }
 
-  
+
   .home__data{
     margin-top: 20px;
     margin-right: 120px;
@@ -1454,90 +1458,90 @@ filter: blur(1px);
     align-items: center;
   }
 
-.contact__form{
-  width: 55rem;
-}
-  .container2{
-  margin-left: 5rem;
-  /* margin-top: 5.6rem; */
-  /* border: 3px solid black; */
-}
+  .contact__form{
+    width: 55rem;
+  }
+    .container2{
+    margin-left: 5rem;
+    /* margin-top: 5.6rem; */
+    /* border: 3px solid black; */
+  }
 
-.box{
-  margin-top: 8.6rem;
-  height: 200px;
-  width: 200px;
-  right: 230px;
-}
+  .box{
+    margin-top: 8.6rem;
+    height: 200px;
+    width: 200px;
+    right: 230px;
+  }
 
 
-.card{
-  height: 200px;
-  width: 200px;
-  font-size: 24px;
-  font-weight: 400;
-}
+  .card{
+    height: 200px;
+    width: 200px;
+    font-size: 24px;
+    font-weight: 400;
+  }
 
-.input{
-  top: 15px;
-  right: 280px;
-}
+  .input{
+    top: 15px;
+    right: 280px;
+  }
 
-#front{
-  transform: translateZ(100px);
-}
-#back{
-  transform: translateZ(-100px);
-}
+  #front{
+    transform: translateZ(100px);
+  }
+  #back{
+    transform: translateZ(-100px);
+  }
 
-#left{
-  right: 100px;
-  transform: rotateY(-90deg);
-}
-#right{
-  left: 100px;
-  transform: rotateY(90deg);
-}
-#top{
-  bottom: 100px;
-  transform: rotateX(90deg);
-}   
-#bottom{
-  top: 100px;
-  transform: rotateX(-90deg);
-}
+  #left{
+    right: 100px;
+    transform: rotateY(-90deg);
+  }
+  #right{
+    left: 100px;
+    transform: rotateY(90deg);
+  }
+  #top{
+    bottom: 100px;
+    transform: rotateX(90deg);
+  }   
+  #bottom{
+    top: 100px;
+    transform: rotateX(-90deg);
+  }
 
-.input:focus~ .box #front{
-  transform: translateZ(180px) rotateY(360deg);
-  background: none;
-}
-.input:focus~ .box #back{
-  transform: translateZ(-180px) rotateY(360deg);
-}
-.input:focus~ .box #left{
-  right: 180px;
-}
-.input:focus~ .box #right{
-  left: 180px;
-}
-.input:focus~ .box #top{
-  bottom: 180px;
-}
-.input:focus~ .box #bottom{
-  top: 180px;
-}
+  .input:focus~ .box #front{
+    transform: translateZ(180px) rotateY(360deg);
+    background: none;
+  }
+  .input:focus~ .box #back{
+    transform: translateZ(-180px) rotateY(360deg);
+  }
+  .input:focus~ .box #left{
+    right: 180px;
+  }
+  .input:focus~ .box #right{
+    left: 180px;
+  }
+  .input:focus~ .box #top{
+    bottom: 180px;
+  }
+  .input:focus~ .box #bottom{
+    top: 180px;
+  }
 
-.services__container{
-  width: 60.5rem;
-}
+  .services__container{
+    width: 60.5rem;
+  }
 
-.portfolio__container{
-  margin: 0 auto;  
-}
+  .portfolio__container{
+    margin: 0 auto;  
+  }
 
-.container{
-  max-width: 1440px;
-}
+  .container{
+    max-width: 1440px;
+  }
 }
 
 /* @media screen and (min-width: 1440px){
