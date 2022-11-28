@@ -1476,20 +1476,10 @@ filter: blur(1px);
 
   .horizontal__services{
     display: none;
-    margin-left: 1.25rem;
-    box-shadow: 0 0 0 1px 1px var(--first-color);
-    filter: blur(1px);
   }
 
   .services__img{
     display: none;
-    width: 140px;
-    height: 140px;
-    border-radius: .3rem;
-    align-items: center;
-    justify-self: center;
-    margin: 0 auto;
-    object-fit: contain;
   }
 
   .contact__container,
@@ -1532,10 +1522,6 @@ filter: blur(1px);
     margin-right: 20px;
   }
 }
-
-/* @media screen and (min-width: 768px){
-
-} */
 
 /* For large devices */
 @media screen and (min-width: 1024px){
@@ -1638,6 +1624,12 @@ filter: blur(1px);
     width: 60.5rem;
   }
 
+  .services__img{
+    display: flex;
+    width: 180px;
+    height: 140px;
+  }
+
   .portfolio__container{
     margin: 0 auto;  
   }
@@ -1647,21 +1639,3 @@ filter: blur(1px);
   }
 }
 
-/* @media screen and (min-width: 1440px){
-  .desktop__about{
-  justify-content: center;
-  }
-
-  .about__blob-img{
-    height: 400px;
-    width: 250px;
-  }
-
-  .container2{
-    margin-left: 13rem;
-  }
-  .contact__form{
-    width: 55rem;
-  }
-
-} */
