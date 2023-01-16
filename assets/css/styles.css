@@ -1063,10 +1063,10 @@ filter: blur(1px);
 .footer__container{
   row-gap: 3.5rem; 
   position: relative;
-  background-color: var(--first-color-second);
 }
 
 .footer__bg{
+  background-color: var(--first-color-second);
   padding: 1rem 0 0;
 }
 
@@ -1523,6 +1523,7 @@ filter: blur(1px);
   .footer__gradient{
     margin-right: 20px;
   }
+  
 }
 
 /* For large devices */
